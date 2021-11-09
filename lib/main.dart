@@ -39,7 +39,16 @@ class _MusicHomePageState extends State<MusicHomePage> {
       ),
       body: SafeArea(
         child: Container(),
-      )
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.orange,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.card_giftcard),label: 'Card'),
+          BottomNavigationBarItem(icon: Icon(Icons.card_giftcard),label: 'Card2'),
+          BottomNavigationBarItem(icon: Icon(Icons.card_giftcard),label: 'Card3'),
+          BottomNavigationBarItem(icon: Icon(Icons.card_giftcard),label: 'Card4'),
+        ],
+      ),
     );
   }
 }
