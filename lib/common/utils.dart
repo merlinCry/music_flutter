@@ -15,4 +15,14 @@ Map<int, Color> color =
   900: const Color.fromRGBO(221,0,27, 1),
 };
 
-MaterialColor mainColor = MaterialColor(0xFFDD001B, color);
+MaterialColor materialMainColor = MaterialColor(0xFFDD001B, color);
+Color mainColor = const Color.fromRGBO(221,0,27, 1);
+
+class APoint {
+   int x;
+   int y;
+   APoint(this.x,this.y);
+   factory APoint.fromJson(String dta) {
+     return APoint(1,2);
+   }
+}
